@@ -6257,7 +6257,8 @@ a.icon_bar_dribbble span.b {
 	margin-bottom: 15px
 }
 .team .desc_wrapper .links {
-	line-height: 0
+	line-height: 0;
+	margin-top: auto !important;
 }
 .team.team_horizontal {
 	overflow: hidden
@@ -6276,7 +6277,7 @@ a.icon_bar_dribbble span.b {
 	margin-top: 20px
 }
 .team.team_circle {
-	text-align: center
+	text-align: center;
 }
 .team.team_circle .desc_wrapper hr {
 	margin-left: auto

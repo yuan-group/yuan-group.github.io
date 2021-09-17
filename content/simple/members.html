@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7 "> <![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie10 lt-ie9"> <![endif]-->
-<!--[if IE 9]><html class="no-js lt-ie10"> <![endif]-->
+<!--[if lt IE 7]>
+<html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7 "> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]>
+<html class="no-js lt-ie10"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js">
 <!--<![endif]-->
@@ -26,392 +30,661 @@
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Patua+One:100,300,400,400italic,700'>
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Raleway:100,300,400,400italic,500,700'>
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans&display=swap" rel="stylesheet">
-    
+
     <!-- CSS -->
     <link rel='stylesheet' href='../../css/global.css'>
     <link rel='stylesheet' href='css/structure.css'>
     <link rel='stylesheet' href='css/simple.css'>
     <link rel='stylesheet' href='css/custom.css'>
-
+    <style>
+        .desc_wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 300px;
+        }
+    </style>
 </head>
 
 <body class="style-simple layout-full-width mobile-tb-left no-content-padding header-stack header-center minimalist-header sticky-white ab-hide subheader-both-center menuo-no-borders footer-copy-center">
-  <!-- Main Theme Wrapper -->
-  <div id="Wrapper">
+<!-- Main Theme Wrapper -->
+<div id="Wrapper">
     <!-- Header Wrapper -->
     <div id="Header_wrapper">
-      <!-- Header -->
-      <header id="Header">
+        <!-- Header -->
+        <header id="Header">
 
-        <!-- Header -  Logo and Menu area -->
-        <div id="Top_bar">
-          <div class="container">
-            <div class="column one">
-              <div class="top_bar_left clearfix loading">
+            <!-- Header -  Logo and Menu area -->
+            <div id="Top_bar">
+                <div class="container">
+                    <div class="column one">
+                        <div class="top_bar_left clearfix loading">
 
-                <!-- main caption -->
-                <div class="logo">
-                  <p class="zlab_caption">YUAN GROUP<br></p>
-                  <p>@Institute of Biomedical Big Data & Wenzhou Medical University Eye Hospital</p>
+                            <!-- main caption -->
+                            <div class="logo">
+                                <p class="zlab_caption">YUAN GROUP<br></p>
+                                <p>@Institute of Biomedical Big Data & Wenzhou Medical University Eye Hospital</p>
+                            </div>
+
+                            <!-- Main menu-->
+                            <div class="menu_wrapper">
+                                <nav id="menu" class="menu-main-menu-container">
+                                    <ul id="menu-main-menu" class="menu">
+                                        <li>
+                                            <a href="../../index.html"><span>Home</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="publications.html"><span>Publications</span></a>
+                                        </li>
+                                        <li class="current_page_item">
+                                            <a href="members.html"><span>Members</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="software.html"><span>Software</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="news.html"><span>News</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html"><span>Contact</span></a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <a class="responsive-menu-toggle" href="#"><i class="icon-menu"></i></a>
+                            </div>
+                            <!-- Secondary menu area - only for certain pages -->
+                            <div class="secondary_menu_wrapper"></div>
+                            <!-- Banner area - only for certain pages-->
+                            <div class="banner_wrapper"></div>
+                            <!-- Header Searchform area-->
+                            <div class="search_wrapper">
+                                <form method="get" id="searchform" action="#">
+
+                                    <input type="text" class="field" name="s" id="s" placeholder="Enter your search"/>
+                                    <input type="submit" class="submit flv_disp_none" value=""/>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <!-- Main menu-->
-                <div class="menu_wrapper">
-                  <nav id="menu" class="menu-main-menu-container">
-                    <ul id="menu-main-menu" class="menu">
-                      <li>
-                        <a href="../../index.html"><span>Home</span></a>
-                      </li>
-                      <li>
-                        <a href="publications.html"><span>Publications</span></a>
-                      </li>
-                      <li class="current_page_item">
-                        <a href="members.html"><span>Members</span></a>
-                      </li>
-                      <li>
-                        <a href="software.html"><span>Software</span></a>
-                      </li>
-                      <li>
-                        <a href="news.html"><span>News</span></a>
-                      </li>
-                      <li>
-                        <a href="contact.html"><span>Contact</span></a>
-                      </li>
-                    </ul>
-                  </nav><a class="responsive-menu-toggle" href="#"><i class="icon-menu"></i></a>
-                </div>
-                <!-- Secondary menu area - only for certain pages -->
-                <div class="secondary_menu_wrapper"></div>
-                <!-- Banner area - only for certain pages-->
-                <div class="banner_wrapper"></div>
-                <!-- Header Searchform area-->
-                <div class="search_wrapper">
-                  <form method="get" id="searchform" action="#">
-
-                    <input type="text" class="field" name="s" id="s" placeholder="Enter your search" />
-                    <input type="submit" class="submit flv_disp_none" value="" />
-                  </form>
-                </div>
-              </div>
             </div>
-          </div>
+        </header>
+        <!--Subheader area - only for certain pages -->
+        <div id="Subheader">
+            <div class="container">
+                <div class="column one">
+                    <h1 class="title">Our team</h1>
+                </div>
+            </div>
         </div>
-      </header>
-      <!--Subheader area - only for certain pages -->
-      <div id="Subheader">
-        <div class="container">
-          <div class="column one">
-            <h1 class="title">Our team</h1>
-          </div>
-        </div>
-      </div>
     </div>
     <!-- Main Content -->
     <div id="Content">
-      <div class="content_wrapper clearfix">
-        <div class="sections_group">
-          <div class="entry-content">
-            <div class="section column-margin-50px" style="padding-top:0px; padding-bottom:20px; ">
-              <div class="section_wrapper clearfix">
-                <div class="items_group clearfix">
+        <div class="content_wrapper clearfix">
+            <div class="sections_group">
+                <div class="entry-content">
+                    <div class="section column-margin-50px" style="padding-top:0px; padding-bottom:20px; ">
+                        <div class="section_wrapper clearfix">
+                            <div class="items_group clearfix">
+                                <!-- yuan jian -->
+                                <div class="column mcb-column one-fourth column_our_team">
+                                    <div class="team team_circle">
+                                        <div class="image_frame photo no_link scale-with-grid">
+                                            <div class="image_wrapper">
+                                                <img class="scale-with-grid" src="images/yuan_jian_2.jpg" alt="img">
+                                            </div>
+                                        </div>
+                                        <div class="desc_wrapper">
+                                            <h4>Jian Yuan</h4>
+                                            <p class="subtitle">
+                                                Assistant Research Fellows of IBBD <br>
+                                                &nbsp
+                                            </p>
+                                            <hr class="hr_color">
+                                            <div class="desc">
+                                                Wanding obtained his MS in at Anhui Normal University and Peking
+                                                University, and PhD in Wenzhou Medical University.
+                                            </div>
+                                            <div class="links">
+                                                <a href="mailto:danielwyuan@gmail.com" class="icon_bar icon_bar_small">
+                                                    <span class="t"><i class="icon-mail"></i></span>
+                                                    <span class="b"><i class="icon-mail"></i></span>
+                                                </a>
+                                                <a target="_blank" href="http://facebook.com/"
+                                                   class="icon_bar icon_bar_small">
+                                                    <span class="t"><i class="icon-facebook"></i></span>
+                                                    <span class="b"><i class="icon-facebook"></i></span>
+                                                </a>
+                                                <a target="_blank" href="http://twitter.com/zhouwanding"
+                                                   class="icon_bar icon_bar_small">
+                                                    <span class="t"><i class="icon-twitter"></i></span>
+                                                    <span class="b"><i class="icon-twitter"></i></span></a>
+                                                <a target="_blank"
+                                                   href="https://www.linkedin.com/in/wanding-zhou-35933a32/"
+                                                   class="icon_bar icon_bar_small">
+                                                    <span class="t"><i class="icon-linkedin"></i></span>
+                                                    <span class="b"><i class="icon-linkedin"></i></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                  <!-- one person -->
-                  <div class="column mcb-column one-fourth column_our_team">
-                    <div class="team team_circle">
-                      <div class="image_frame photo no_link scale-with-grid">
-                        <div class="image_wrapper">
-                          <img class="scale-with-grid" src="images/Wanding_Zhou_SMALL_2.jpg" alt="img">
-                        </div>
-                      </div>
-                      <div class="desc_wrapper">
-                        <h4>Jian Yuan</h4>
-                        <p class="subtitle">
-                          Assistant Research Fellows of IBBD
-                        </p>
-                        <hr class="hr_color">
-                        <div class="desc">
-                          Wanding obtained his MS in at Anhui Normal University and Peking University, and PhD in Wenzhou Medical University.
-                        </div>
-                        <div class="links">
-                          <a href="mailto:danielwyuan@gmail.com" class="icon_bar icon_bar_small">
-                            <span class="t"><i class="icon-mail"></i></span>
-                            <span class="b"><i class="icon-mail"></i></span>
-                          </a>
-                          <a target="_blank" href="http://facebook.com/" class="icon_bar icon_bar_small">
-                            <span class="t"><i class="icon-facebook"></i></span>
-                            <span class="b"><i class="icon-facebook"></i></span>
-                          </a>
-                          <a target="_blank" href="http://twitter.com/zhouwanding" class="icon_bar icon_bar_small">
-                            <span class="t"><i class="icon-twitter"></i></span>
-                            <span class="b"><i class="icon-twitter"></i></span></a>
-                          <a target="_blank" href="https://www.linkedin.com/in/wanding-zhou-35933a32/" class="icon_bar icon_bar_small">
-                            <span class="t"><i class="icon-linkedin"></i></span>
-                            <span class="b"><i class="icon-linkedin"></i></span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                                <!-- xue zheng bo -->
+                                <div class="column mcb-column one-fourth column_our_team">
+                                    <div class="team team_circle">
+                                        <div class="image_frame photo no_link scale-with-grid">
+                                            <div class="image_wrapper">
+                                                <img class="scale-with-grid" src="images/xue_zheng_bo_2.jpg" alt="img">
+                                            </div>
+                                        </div>
+                                        <div class="desc_wrapper">
+                                            <h4>Zhengbo Xue</h4>
+                                            <p class="subtitle">
+                                                Graduate Research Associate <br>
+                                                &nbsp
+                                            </p>
+                                            <hr class="hr_color">
+                                            <div class="desc">
+                                                Zhengbo is a ophthalmology graduate student from Wenzhou Medical
+                                                University. He works on polygenic score and risk of ocular disorders.
+                                            </div>
+                                            <div class="links">
+                                                <a href="mailto:noreply@envato.com" class="icon_bar icon_bar_small">
+                                                    <span class="t"><i class="icon-mail"></i></span>
+                                                    <span class="b"><i class="icon-mail"></i></span>
+                                                </a>
+                                                <a target="_blank" href="http://facebook.com/"
+                                                   class="icon_bar icon_bar_small">
+                                                    <span class="t"><i class="icon-facebook"></i></span>
+                                                    <span class="b"><i class="icon-facebook"></i></span>
+                                                </a>
+                                                <a target="_blank" href="http://twitter.com/"
+                                                   class="icon_bar icon_bar_small">
+                                                    <span class="t"><i class="icon-twitter"></i></span>
+                                                    <span class="b"><i class="icon-twitter"></i></span></a>
+                                                <a target="_blank" href="http://www.linkedin.com/"
+                                                   class="icon_bar icon_bar_small">
+                                                    <span class="t"><i class="icon-linkedin"></i></span>
+                                                    <span class="b"><i class="icon-linkedin"></i></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                  <!-- one person -->
-                  <div class="column mcb-column one-fourth column_our_team">
-                    <div class="team team_circle">
-                      <div class="image_frame photo no_link scale-with-grid">
-                        <div class="image_wrapper">
-                          <img class="scale-with-grid" src="images/ethan_moyer2.jpg" alt="img">
-                        </div>
-                      </div>
-                      <div class="desc_wrapper">
-                        <h4>Zhengbo Xue</h4>
-                        <p class="subtitle">
-                          Graduate Research Associate <br>
-                          &nbsp
-                        </p>
-                        <hr class="hr_color">
-                        <div class="desc">
-                          Zhengbo is a ophthalmology graduate student from Wenzhou Medical University. He works on polygenic score and risk of ocular disorders.
-                        </div>
-                        <div class="links">
-                          <a href="mailto:noreply@envato.com" class="icon_bar icon_bar_small">
-                            <span class="t"><i class="icon-mail"></i></span>
-                            <span class="b"><i class="icon-mail"></i></span>
-                          </a>
-                          <a target="_blank" href="http://facebook.com/" class="icon_bar icon_bar_small">
-                            <span class="t"><i class="icon-facebook"></i></span>
-                            <span class="b"><i class="icon-facebook"></i></span>
-                          </a>
-                          <a target="_blank" href="http://twitter.com/" class="icon_bar icon_bar_small">
-                            <span class="t"><i class="icon-twitter"></i></span>
-                            <span class="b"><i class="icon-twitter"></i></span></a>
-                          <a target="_blank" href="http://www.linkedin.com/" class="icon_bar icon_bar_small">
-                            <span class="t"><i class="icon-linkedin"></i></span>
-                            <span class="b"><i class="icon-linkedin"></i></span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                                <!-- fan dan dan -->
+                                <div class="column mcb-column one-fourth column_our_team">
+                                    <div class="team team_circle">
+                                        <div class="image_frame photo no_link scale-with-grid">
+                                            <div class="image_wrapper">
+                                                <img class="scale-with-grid" src="images/fan_dan_dan_2.jpg" alt="img">
+                                            </div>
+                                        </div>
+                                        <div class="desc_wrapper">
+                                            <h4>Dandan Fan</h4>
+                                            <p class="subtitle">
+                                                Graduate Research Associate <br>
+                                                &nbsp
+                                            </p>
+                                            <hr class="hr_color">
+                                            <div class="desc">
+                                                Dandan is a Bioinformatics student from Harbin Medical University. She
+                                                works on exome and genome wide association study and transcriptome
+                                                analysis.
+                                            </div>
+                                            <div class="links">
+                                                <a href="mailto:noreply@envato.com" class="icon_bar icon_bar_small">
+                                                    <span class="t"><i class="icon-mail"></i></span>
+                                                    <span class="b"><i class="icon-mail"></i></span>
+                                                </a>
+                                                <a target="_blank" href="http://facebook.com/"
+                                                   class="icon_bar icon_bar_small">
+                                                    <span class="t"><i class="icon-facebook"></i></span>
+                                                    <span class="b"><i class="icon-facebook"></i></span>
+                                                </a>
+                                                <a target="_blank" href="http://twitter.com/"
+                                                   class="icon_bar icon_bar_small">
+                                                    <span class="t"><i class="icon-twitter"></i></span>
+                                                    <span class="b"><i class="icon-twitter"></i></span></a>
+                                                <a target="_blank" href="http://www.linkedin.com/"
+                                                   class="icon_bar icon_bar_small">
+                                                    <span class="t"><i class="icon-linkedin"></i></span>
+                                                    <span class="b"><i class="icon-linkedin"></i></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                  <!-- one person -->
-                  <div class="column mcb-column one-fourth column_our_team">
-                    <div class="team team_circle">
-                      <div class="image_frame photo no_link scale-with-grid">
-                        <div class="image_wrapper">
-                          <img class="scale-with-grid" src="images/yang_wan3.png" alt="img">
+                                <!-- chen fu kun -->
+                                <div class="column mcb-column one-fourth column_our_team">
+                                    <div class="team team_circle">
+                                        <div class="image_frame photo no_link scale-with-grid">
+                                            <div class="image_wrapper">
+                                                <img class="scale-with-grid" src="images/chen_fu_kun_2.jpg" alt="img">
+                                            </div>
+                                        </div>
+                                        <div class="desc_wrapper">
+                                            <h4>Fukun Chen</h4>
+                                            <p class="subtitle">
+                                                Graduate Research Associate <br>
+                                                &nbsp
+                                            </p>
+                                            <hr class="hr_color">
+                                            <div class="desc">
+                                                Fukun is a Bioinformatics student from Harbin Medical University. He
+                                                works on exome sequencing study and database.
+                                            </div>
+                                            <div class="links">
+                                                <a href="mailto:noreply@envato.com" class="icon_bar icon_bar_small">
+                                                    <span class="t"><i class="icon-mail"></i></span>
+                                                    <span class="b"><i class="icon-mail"></i></span>
+                                                </a>
+                                                <a target="_blank" href="http://facebook.com/"
+                                                   class="icon_bar icon_bar_small">
+                                                    <span class="t"><i class="icon-facebook"></i></span>
+                                                    <span class="b"><i class="icon-facebook"></i></span>
+                                                </a>
+                                                <a target="_blank" href="http://twitter.com/"
+                                                   class="icon_bar icon_bar_small">
+                                                    <span class="t"><i class="icon-twitter"></i></span>
+                                                    <span class="b"><i class="icon-twitter"></i></span></a>
+                                                <a target="_blank" href="http://www.linkedin.com/"
+                                                   class="icon_bar icon_bar_small">
+                                                    <span class="t"><i class="icon-linkedin"></i></span>
+                                                    <span class="b"><i class="icon-linkedin"></i></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="items_group clearfix">
+                                <!-- jiang qi -->
+                                <div class="column mcb-column one-fourth column_our_team">
+                                    <div class="team team_circle">
+                                        <div class="image_frame photo no_link scale-with-grid">
+                                            <div class="image_wrapper">
+                                                <img class="scale-with-grid" src="images/jiang_qi.jpg" alt="img">
+                                            </div>
+                                        </div>
+                                        <div class="desc_wrapper">
+                                            <h4>Qi Jiang</h4>
+                                            <p class="subtitle">
+                                                Graduate Research Associate <br>
+                                                &nbsp
+                                            </p>
+                                            <hr class="hr_color">
+                                            <div class="desc">
+                                                Qi is a student from Soochow University. She works on H3K27me3 chromatin
+                                                domains in Esophageal Squamous Cell Carcinoma.
+                                            </div>
+                                            <div class="links">
+                                                <a href="mailto:noreply@envato.com" class="icon_bar icon_bar_small">
+                                                    <span class="t"><i class="icon-mail"></i></span>
+                                                    <span class="b"><i class="icon-mail"></i></span>
+                                                </a>
+                                                <a target="_blank" href="http://facebook.com/"
+                                                   class="icon_bar icon_bar_small">
+                                                    <span class="t"><i class="icon-facebook"></i></span>
+                                                    <span class="b"><i class="icon-facebook"></i></span>
+                                                </a>
+                                                <a target="_blank" href="http://twitter.com/"
+                                                   class="icon_bar icon_bar_small">
+                                                    <span class="t"><i class="icon-twitter"></i></span>
+                                                    <span class="b"><i class="icon-twitter"></i></span></a>
+                                                <a target="_blank" href="http://www.linkedin.com/"
+                                                   class="icon_bar icon_bar_small">
+                                                    <span class="t"><i class="icon-linkedin"></i></span>
+                                                    <span class="b"><i class="icon-linkedin"></i></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- zhang ji -->
+                                <div class="column mcb-column one-fourth column_our_team">
+                                    <div class="team team_circle">
+                                        <div class="image_frame photo no_link scale-with-grid">
+                                            <div class="image_wrapper">
+                                                <img class="scale-with-grid" src="images/zhang_ji_2.jpg" alt="img">
+                                            </div>
+                                        </div>
+                                        <div class="desc_wrapper">
+                                            <h4>Ji Zhang</h4>
+                                            <p class="subtitle">
+                                                Graduate Research Associate <br>
+                                                &nbsp
+                                            </p>
+                                            <hr class="hr_color">
+                                            <div class="desc">
+                                                Ji is a Bioinformatics student from Harbin Medical University. He works
+                                                on DNA methylation in Esophageal Squamous Cell Carcinoma.
+                                            </div>
+                                            <div class="links">
+                                                <a href="mailto:noreply@envato.com" class="icon_bar icon_bar_small">
+                                                    <span class="t"><i class="icon-mail"></i></span>
+                                                    <span class="b"><i class="icon-mail"></i></span>
+                                                </a>
+                                                <a target="_blank" href="http://facebook.com/"
+                                                   class="icon_bar icon_bar_small">
+                                                    <span class="t"><i class="icon-facebook"></i></span>
+                                                    <span class="b"><i class="icon-facebook"></i></span>
+                                                </a>
+                                                <a target="_blank" href="http://twitter.com/"
+                                                   class="icon_bar icon_bar_small">
+                                                    <span class="t"><i class="icon-twitter"></i></span>
+                                                    <span class="b"><i class="icon-twitter"></i></span></a>
+                                                <a target="_blank" href="http://www.linkedin.com/"
+                                                   class="icon_bar icon_bar_small">
+                                                    <span class="t"><i class="icon-linkedin"></i></span>
+                                                    <span class="b"><i class="icon-linkedin"></i></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- yu xiang yi -->
+                                <div class="column mcb-column one-fourth column_our_team">
+                                    <div class="team team_circle">
+                                        <div class="image_frame photo no_link scale-with-grid">
+                                            <div class="image_wrapper">
+                                                <img class="scale-with-grid" src="images/yu_xiang_yi.jpg" alt="img">
+                                            </div>
+                                        </div>
+                                        <div class="desc_wrapper">
+                                            <h4>Xiangyi Yu</h4>
+                                            <p class="subtitle">
+                                                Graduate Research Associate <br>
+                                                &nbsp
+                                            </p>
+                                            <hr class="hr_color">
+                                            <div class="desc">
+                                                Xiangyi is a Bioinformatics student from Wenzhou Medical University.
+                                            </div>
+                                            <div class="links">
+                                                <a href="mailto:noreply@envato.com" class="icon_bar icon_bar_small">
+                                                    <span class="t"><i class="icon-mail"></i></span>
+                                                    <span class="b"><i class="icon-mail"></i></span>
+                                                </a>
+                                                <a target="_blank" href="http://facebook.com/"
+                                                   class="icon_bar icon_bar_small">
+                                                    <span class="t"><i class="icon-facebook"></i></span>
+                                                    <span class="b"><i class="icon-facebook"></i></span>
+                                                </a>
+                                                <a target="_blank" href="http://twitter.com/"
+                                                   class="icon_bar icon_bar_small">
+                                                    <span class="t"><i class="icon-twitter"></i></span>
+                                                    <span class="b"><i class="icon-twitter"></i></span></a>
+                                                <a target="_blank" href="http://www.linkedin.com/"
+                                                   class="icon_bar icon_bar_small">
+                                                    <span class="t"><i class="icon-linkedin"></i></span>
+                                                    <span class="b"><i class="icon-linkedin"></i></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- han hong cheng -->
+                                <div class="column mcb-column one-fourth column_our_team">
+                                    <div class="team team_circle">
+                                        <div class="image_frame photo no_link scale-with-grid">
+                                            <div class="image_wrapper">
+                                                <img class="scale-with-grid" src="images/han_hong_cheng_2.jpg"
+                                                     alt="img">
+                                            </div>
+                                        </div>
+                                        <div class="desc_wrapper">
+                                            <h4>Hongcheng Han</h4>
+                                            <p class="subtitle">
+                                                Graduate Research Associate <br>
+                                                &nbsp
+                                            </p>
+                                            <hr class="hr_color">
+                                            <div class="desc">
+                                                Hongcheng is a Electronic Information
+                                                student from Hefei University of Technology.
+                                            </div>
+                                            <div class="links">
+                                                <a href="mailto:noreply@envato.com" class="icon_bar icon_bar_small">
+                                                    <span class="t"><i class="icon-mail"></i></span>
+                                                    <span class="b"><i class="icon-mail"></i></span>
+                                                </a>
+                                                <a target="_blank" href="http://facebook.com/"
+                                                   class="icon_bar icon_bar_small">
+                                                    <span class="t"><i class="icon-facebook"></i></span>
+                                                    <span class="b"><i class="icon-facebook"></i></span>
+                                                </a>
+                                                <a target="_blank" href="http://twitter.com/"
+                                                   class="icon_bar icon_bar_small">
+                                                    <span class="t"><i class="icon-twitter"></i></span>
+                                                    <span class="b"><i class="icon-twitter"></i></span></a>
+                                                <a target="_blank" href="http://www.linkedin.com/"
+                                                   class="icon_bar icon_bar_small">
+                                                    <span class="t"><i class="icon-linkedin"></i></span>
+                                                    <span class="b"><i class="icon-linkedin"></i></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="items_group clearfix">
+                                <!-- kong hen te -->
+                                <div class="column mcb-column one-fourth column_our_team">
+                                    <div class="team team_circle">
+                                        <div class="image_frame photo no_link scale-with-grid">
+                                            <div class="image_wrapper">
+                                                <img class="scale-with-grid" src="images/kong_heng_te.jpg" alt="img">
+                                            </div>
+                                        </div>
+                                        <div class="desc_wrapper">
+                                            <h4>Hengte Kong</h4>
+                                            <p class="subtitle">
+                                                Graduate Research Associate <br>
+                                                &nbsp
+                                            </p>
+                                            <hr class="hr_color">
+                                            <div class="desc">
+                                                Hengte is a Electronic Information
+                                                student from NingboTech University.
+                                            </div>
+                                            <div class="links">
+                                                <a href="mailto:noreply@envato.com" class="icon_bar icon_bar_small">
+                                                    <span class="t"><i class="icon-mail"></i></span>
+                                                    <span class="b"><i class="icon-mail"></i></span>
+                                                </a>
+                                                <a target="_blank" href="http://facebook.com/"
+                                                   class="icon_bar icon_bar_small">
+                                                    <span class="t"><i class="icon-facebook"></i></span>
+                                                    <span class="b"><i class="icon-facebook"></i></span>
+                                                </a>
+                                                <a target="_blank" href="http://twitter.com/"
+                                                   class="icon_bar icon_bar_small">
+                                                    <span class="t"><i class="icon-twitter"></i></span>
+                                                    <span class="b"><i class="icon-twitter"></i></span></a>
+                                                <a target="_blank" href="http://www.linkedin.com/"
+                                                   class="icon_bar icon_bar_small">
+                                                    <span class="t"><i class="icon-linkedin"></i></span>
+                                                    <span class="b"><i class="icon-linkedin"></i></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- sun hao jun -->
+                                <div class="column mcb-column one-fourth column_our_team">
+                                    <div class="team team_circle">
+                                        <div class="image_frame photo no_link scale-with-grid">
+                                            <div class="image_wrapper">
+                                                <img class="scale-with-grid" src="images/sun_hao_jun.jpg" alt="img">
+                                            </div>
+                                        </div>
+                                        <div class="desc_wrapper">
+                                            <h4>Haojun Sun</h4>
+                                            <p class="subtitle">
+                                                Graduate Research Associate <br>
+                                                &nbsp
+                                            </p>
+                                            <hr class="hr_color">
+                                            <div class="desc">
+                                                Haojun is a Electronic Information
+                                                student from Nanjing University of Traditional Chinese Medicine .
+                                            </div>
+                                            <div class="links">
+                                                <a href="mailto:noreply@envato.com" class="icon_bar icon_bar_small">
+                                                    <span class="t"><i class="icon-mail"></i></span>
+                                                    <span class="b"><i class="icon-mail"></i></span>
+                                                </a>
+                                                <a target="_blank" href="http://facebook.com/"
+                                                   class="icon_bar icon_bar_small">
+                                                    <span class="t"><i class="icon-facebook"></i></span>
+                                                    <span class="b"><i class="icon-facebook"></i></span>
+                                                </a>
+                                                <a target="_blank" href="http://twitter.com/"
+                                                   class="icon_bar icon_bar_small">
+                                                    <span class="t"><i class="icon-twitter"></i></span>
+                                                    <span class="b"><i class="icon-twitter"></i></span></a>
+                                                <a target="_blank" href="http://www.linkedin.com/"
+                                                   class="icon_bar icon_bar_small">
+                                                    <span class="t"><i class="icon-linkedin"></i></span>
+                                                    <span class="b"><i class="icon-linkedin"></i></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- jiang si yi -->
+                                <div class="column mcb-column one-fourth column_our_team">
+                                    <div class="team team_circle">
+                                        <div class="image_frame photo no_link scale-with-grid">
+                                            <div class="image_wrapper">
+                                                <img class="scale-with-grid" src="images/jiang_si_yi_2.jpg" alt="img">
+                                            </div>
+                                        </div>
+                                        <div class="desc_wrapper">
+                                            <h4>Siyi Jiang</h4>
+                                            <p class="subtitle">
+                                                Graduate Research Associate <br>
+                                                &nbsp
+                                            </p>
+                                            <hr class="hr_color">
+                                            <div class="desc">
+                                                Siyi is a Electronic Information
+                                                student from Southern Medical University.
+                                            </div>
+                                            <div class="links">
+                                                <a href="mailto:noreply@envato.com" class="icon_bar icon_bar_small">
+                                                    <span class="t"><i class="icon-mail"></i></span>
+                                                    <span class="b"><i class="icon-mail"></i></span>
+                                                </a>
+                                                <a target="_blank" href="http://facebook.com/"
+                                                   class="icon_bar icon_bar_small">
+                                                    <span class="t"><i class="icon-facebook"></i></span>
+                                                    <span class="b"><i class="icon-facebook"></i></span>
+                                                </a>
+                                                <a target="_blank" href="http://twitter.com/"
+                                                   class="icon_bar icon_bar_small">
+                                                    <span class="t"><i class="icon-twitter"></i></span>
+                                                    <span class="b"><i class="icon-twitter"></i></span></a>
+                                                <a target="_blank" href="http://www.linkedin.com/"
+                                                   class="icon_bar icon_bar_small">
+                                                    <span class="t"><i class="icon-linkedin"></i></span>
+                                                    <span class="b"><i class="icon-linkedin"></i></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                      <div class="desc_wrapper">
-                        <h4>Dandan Fan</h4>
-                        <p class="subtitle">
-                          Graduate Research Associate <br>
-                          &nbsp
-                        </p>
-                        <hr class="hr_color">
-                        <div class="desc">
-                          Dandan is a Bioinformatics student from Harbin Medical University. She works on exome and genome wide association study and transcriptome analysis.
-                        </div>
-                        <div class="links">
-                          <a href="mailto:noreply@envato.com" class="icon_bar icon_bar_small">
-                            <span class="t"><i class="icon-mail"></i></span>
-                            <span class="b"><i class="icon-mail"></i></span>
-                          </a>
-                          <a target="_blank" href="http://facebook.com/" class="icon_bar icon_bar_small">
-                            <span class="t"><i class="icon-facebook"></i></span>
-                            <span class="b"><i class="icon-facebook"></i></span>
-                          </a>
-                          <a target="_blank" href="http://twitter.com/" class="icon_bar icon_bar_small">
-                            <span class="t"><i class="icon-twitter"></i></span>
-                            <span class="b"><i class="icon-twitter"></i></span></a>
-                          <a target="_blank" href="http://www.linkedin.com/" class="icon_bar icon_bar_small">
-                            <span class="t"><i class="icon-linkedin"></i></span>
-                            <span class="b"><i class="icon-linkedin"></i></span>
-                          </a>
-                        </div>
-                      </div>
                     </div>
-                  </div>
-                    
-                  <!-- one person -->
-                  <div class="column mcb-column one-fourth column_our_team">
-                    <div class="team team_circle">
-                      <div class="image_frame photo no_link scale-with-grid">
-                        <div class="image_wrapper">
-                          <img class="scale-with-grid" src="images/yang_wan3.png" alt="img">
+                    <!-- Footer-->
+                    <footer id="Footer" class="clearfix">
+                        <div class="widgets_wrapper">
+                            <div class="container">
+                                <div class="column one">
+                                    <!-- Text Area -->
+                                    <aside class="widget widget_text">
+                                        <div class="textwidget">
+                                            <div style="text-align: center;">
+                                                <p class="contact_icons">
+                                                    <a href="#"><i class="icon-facebook-circled"></i></a><a href="#"><i
+                                                        class="icon-gplus-circled"></i></a><a href="#"><i
+                                                        class="icon-twitter-circled"></i></a><a href="#"><i
+                                                        class="icon-pinterest-circled"></i></a><a href="#"><i
+                                                        class="icon-linkedin-circled"></i></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </aside>
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                      <div class="desc_wrapper">
-                        <h4>Fukun Chen</h4>
-                        <p class="subtitle">
-                          Graduate Research Associate <br>
-                          &nbsp
-                        </p>
-                        <hr class="hr_color">
-                        <div class="desc">
-                          Fukun is a Bioinformatics student from Harbin Medical University. He works on exome sequencing study and database.
+                        <!-- Footer copyright-->
+                        <div class="footer_copy">
+                            <div class="container">
+                                <div class="column one">
+                                    <div class="copyright">
+                                        &copy; 2019-2020 The Jian Yuan Lab. All rights reserved.
+                                    </div>
+                                    <!--Social info area-->
+                                    <ul class="social"></ul>
+                                </div>
+                            </div>
                         </div>
-                        <div class="links">
-                          <a href="mailto:noreply@envato.com" class="icon_bar icon_bar_small">
-                            <span class="t"><i class="icon-mail"></i></span>
-                            <span class="b"><i class="icon-mail"></i></span>
-                          </a>
-                          <a target="_blank" href="http://facebook.com/" class="icon_bar icon_bar_small">
-                            <span class="t"><i class="icon-facebook"></i></span>
-                            <span class="b"><i class="icon-facebook"></i></span>
-                          </a>
-                          <a target="_blank" href="http://twitter.com/" class="icon_bar icon_bar_small">
-                            <span class="t"><i class="icon-twitter"></i></span>
-                            <span class="b"><i class="icon-twitter"></i></span></a>
-                          <a target="_blank" href="http://www.linkedin.com/" class="icon_bar icon_bar_small">
-                            <span class="t"><i class="icon-linkedin"></i></span>
-                            <span class="b"><i class="icon-linkedin"></i></span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                    
-                  <!-- one person -->
-                  <div class="column mcb-column one-fourth column_our_team">
-                    <div class="team team_circle">
-                      <div class="image_frame photo no_link scale-with-grid">
-                        <div class="image_wrapper">
-                          <img class="scale-with-grid" src="images/Borui_Xiao2.png" alt="img">
-                        </div>
-                      </div>
-                      <div class="desc_wrapper">
-                        <h4>Qi Jiang</h4>
-                        <p class="subtitle">
-                          Graduate Research Associate <br>
-                          &nbsp
-                        </p>
-                        <hr class="hr_color">
-                        <div class="desc">
-                          Qi is a  student from Soochow University. She works on H3K27me3 chromatin domains in Esophageal Squamous Cell Carcinoma.
-                        </div>
-                        <div class="links">
-                          <a href="mailto:noreply@envato.com" class="icon_bar icon_bar_small">
-                            <span class="t"><i class="icon-mail"></i></span>
-                            <span class="b"><i class="icon-mail"></i></span>
-                          </a>
-                          <a target="_blank" href="http://facebook.com/" class="icon_bar icon_bar_small">
-                            <span class="t"><i class="icon-facebook"></i></span>
-                            <span class="b"><i class="icon-facebook"></i></span>
-                          </a>
-                          <a target="_blank" href="http://twitter.com/" class="icon_bar icon_bar_small">
-                            <span class="t"><i class="icon-twitter"></i></span>
-                            <span class="b"><i class="icon-twitter"></i></span></a>
-                          <a target="_blank" href="http://www.linkedin.com/" class="icon_bar icon_bar_small">
-                            <span class="t"><i class="icon-linkedin"></i></span>
-                            <span class="b"><i class="icon-linkedin"></i></span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                    
-                  <!-- one person -->
-                  <div class="column mcb-column one-fourth column_our_team">
-                    <div class="team team_circle">
-                      <div class="image_frame photo no_link scale-with-grid">
-                        <div class="image_wrapper">
-                          <img class="scale-with-grid" src="images/yang_wan3.png" alt="img">
-                        </div>
-                      </div>
-                      <div class="desc_wrapper">
-                        <h4>Ji Zhang</h4>
-                        <p class="subtitle">
-                          Graduate Research Associate <br>
-                          &nbsp
-                        </p>
-                        <hr class="hr_color">
-                        <div class="desc">
-                          Ji is a Bioinformatics student from Harbin Medical University. He works on DNA methylation in Esophageal Squamous Cell Carcinoma.
-                        </div>
-                        <div class="links">
-                          <a href="mailto:noreply@envato.com" class="icon_bar icon_bar_small">
-                            <span class="t"><i class="icon-mail"></i></span>
-                            <span class="b"><i class="icon-mail"></i></span>
-                          </a>
-                          <a target="_blank" href="http://facebook.com/" class="icon_bar icon_bar_small">
-                            <span class="t"><i class="icon-facebook"></i></span>
-                            <span class="b"><i class="icon-facebook"></i></span>
-                          </a>
-                          <a target="_blank" href="http://twitter.com/" class="icon_bar icon_bar_small">
-                            <span class="t"><i class="icon-twitter"></i></span>
-                            <span class="b"><i class="icon-twitter"></i></span></a>
-                          <a target="_blank" href="http://www.linkedin.com/" class="icon_bar icon_bar_small">
-                            <span class="t"><i class="icon-linkedin"></i></span>
-                            <span class="b"><i class="icon-linkedin"></i></span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                    
+                    </footer>
                 </div>
-              </div>
-            </div>
-    <!-- Footer-->
-    <footer id="Footer" class="clearfix">
-      <div class="widgets_wrapper">
-        <div class="container">
-          <div class="column one">
-            <!-- Text Area -->
-            <aside class="widget widget_text">
-              <div class="textwidget">
-                <div style="text-align: center;">
-                  <p class="contact_icons">
-                    <a href="#"><i class="icon-facebook-circled"></i></a><a href="#"><i class="icon-gplus-circled"></i></a><a href="#"><i class="icon-twitter-circled"></i></a><a href="#"><i class="icon-pinterest-circled"></i></a><a href="#"><i class="icon-linkedin-circled"></i></a>
-                  </p>
-                </div>
-              </div>
-            </aside>
-          </div>
-        </div>
-      </div>
-      <!-- Footer copyright-->
-      <div class="footer_copy">
-        <div class="container">
-          <div class="column one">
-            <div class="copyright">
-              &copy; 2019-2020 The Jian Yuan Lab. All rights reserved.
-            </div>
-            <!--Social info area-->
-            <ul class="social"></ul>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </div>
-    
-    <!-- JS -->
-    <script src="../../js/jquery-2.1.4.min.js"></script>
 
-    <script src="../../js/mfn.menu.js"></script>
-    <script src="../../js/jquery.plugins.js"></script>
-    <script src="../../js/jquery.jplayer.min.js"></script>
-    <script src="../../js/animations/animations.js"></script>
-    <script src="../../js/scripts.js"></script>
+                <!-- JS -->
+                <script src="../../js/jquery-2.1.4.min.js"></script>
 
-    <script>
-        <!-- jQuery(window).load(function() { -->
-        <!--     var retina = window.devicePixelRatio > 1 ? true : false; -->
-        <!--     if (retina) { -->
-        <!--         var retinaEl = jQuery("#logo img"); -->
-        <!--         var retinaLogoW = retinaEl.width(); -->
-        <!--         var retinaLogoH = retinaEl.height(); -->
-        <!--         retinaEl.attr("src", "images/simple.svg").width(retinaLogoW).height(retinaLogoH); -->
-        <!--         var stickyEl = jQuery("#logo img.logo-sticky"); -->
-        <!--         var stickyLogoW = stickyEl.width(); -->
-        <!--         var stickyLogoH = stickyEl.height(); -->
-        <!--         stickyEl.attr("src", "images/simple.svg").width(stickyLogoW).height(stickyLogoH); -->
-        <!--         var mobileEl = jQuery("#logo img.logo-mobile"); -->
-        <!--         var mobileLogoW = mobileEl.width(); -->
-        <!--         var mobileLogoH = mobileEl.height(); -->
-        <!--         mobileEl.attr("src", "images/simple.svg").width(mobileLogoW).height(mobileLogoH); -->
-        <!--     } -->
-        <!-- }); -->
-    </script>
+                <script src="../../js/mfn.menu.js"></script>
+                <script src="../../js/jquery.plugins.js"></script>
+                <script src="../../js/jquery.jplayer.min.js"></script>
+                <script src="../../js/animations/animations.js"></script>
+                <script src="../../js/scripts.js"></script>
+
+                <!--                <script>-->
+                <!--                    &lt;!&ndash;-->
+                <!--                    jQuery(window).load(function () { &ndash;&gt;-->
+                <!--                        &lt;!&ndash;-->
+                <!--                        var retina = window.devicePixelRatio > 1 ? true : false; &ndash;&gt;-->
+                <!--                        &lt;!&ndash;-->
+                <!--                        if (retina) { &ndash;&gt;-->
+                <!--                            &lt;!&ndash;-->
+                <!--                            var retinaEl = jQuery("#logo img"); &ndash;&gt;-->
+                <!--                            &lt;!&ndash;-->
+                <!--                            var retinaLogoW = retinaEl.width(); &ndash;&gt;-->
+                <!--                            &lt;!&ndash;-->
+                <!--                            var retinaLogoH = retinaEl.height(); &ndash;&gt;-->
+                <!--                            &lt;!&ndash;-->
+                <!--                            retinaEl.attr("src", "images/simple.svg").width(retinaLogoW).height(retinaLogoH); &ndash;&gt;-->
+                <!--                            &lt;!&ndash;-->
+                <!--                            var stickyEl = jQuery("#logo img.logo-sticky"); &ndash;&gt;-->
+                <!--                            &lt;!&ndash;-->
+                <!--                            var stickyLogoW = stickyEl.width(); &ndash;&gt;-->
+                <!--                            &lt;!&ndash;-->
+                <!--                            var stickyLogoH = stickyEl.height(); &ndash;&gt;-->
+                <!--                            &lt;!&ndash;-->
+                <!--                            stickyEl.attr("src", "images/simple.svg").width(stickyLogoW).height(stickyLogoH); &ndash;&gt;-->
+                <!--                            &lt;!&ndash;-->
+                <!--                            var mobileEl = jQuery("#logo img.logo-mobile"); &ndash;&gt;-->
+                <!--                            &lt;!&ndash;-->
+                <!--                            var mobileLogoW = mobileEl.width(); &ndash;&gt;-->
+                <!--                            &lt;!&ndash;-->
+                <!--                            var mobileLogoH = mobileEl.height(); &ndash;&gt;-->
+                <!--                            &lt;!&ndash;-->
+                <!--                            mobileEl.attr("src", "images/simple.svg").width(mobileLogoW).height(mobileLogoH); &ndash;&gt;-->
+                <!--                            &lt;!&ndash;-->
+                <!--                        } &ndash;&gt;-->
+                <!--                    &lt;!&ndash; }); &ndash;&gt;-->
+                <!--                </script>-->
 
 </body>
 
